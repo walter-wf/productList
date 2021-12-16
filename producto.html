@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./producto.css" />
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Available Products</h1>
+        </div>
+        <i data-feather="circle"></i>
+
+        <div class="cards-container">
+            <div class="card">
+                <h2 class="titulo">Playstation 5</h2>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    laboriosam recusandae alias culpa quae totam asperiores
+                    veniam quia quod, error expedita repellat aliquam minus
+                    ducimus necessitatibus ipsa, soluta quos ab?
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="titulo">Xbox Series X</h2>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    laboriosam recusandae alias culpa quae totam asperiores
+                    veniam quia quod, error expedita repellat aliquam minus
+                    ducimus necessitatibus ipsa, soluta quos ab?
+                </p>
+            </div>
+            <div class="card">
+                <h2 class="titulo">Notebook Razer</h2>
+                <p class="descripcion">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                    laboriosam recusandae alias culpa quae totam asperiores
+                    veniam quia quod, error expedita repellat aliquam minus
+                    ducimus necessitatibus ipsa, soluta quos ab?
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+        $(document).ready(function () {
+            $(".descripcion").hide()
+            $(".titulo").click(function () {
+                $(".descripcion").slideToggle()
+            })
+    
+        })
+</script>
